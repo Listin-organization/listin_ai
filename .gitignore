@@ -1,4 +1,25 @@
-/home/noor/A/projects/listin_agent/agent/__pycache__
-/home/noor/A/projects/listin_agent/coral-shoreline-439510-f3-9756ab4add31.json
-/home/noor/A/projects/listin_agent/listin_agent_venv
-/home/noor/A/projects/listin_agent/__pycache__
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual envs
+listin_agent_venv/
+venv/
+.env/
+.envrc
+
+# Google Cloud credentials (DO NOT UPLOAD!)
+*.json
+!agent/listin_seller_data.json
+
+# Logs
+*.log
+
+# OS & editor
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
