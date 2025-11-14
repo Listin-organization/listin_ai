@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+listin_agent_venv/
+venv/
+.env/
+
+# Google Cloud credentials
+*.json
+!agent/listin_seller_data.json  # keep only this JSON tracked
+
+# OS & editor
+.DS_Store
+*.swp
+*.swo
+
