@@ -16,10 +16,9 @@ except (FileNotFoundError, json.JSONDecodeError):
     print(f"⚠️  Warning: Could not load {config_path}")
 
 store_name = store_data.get('store_name')
-# --- end ---
 
 listin_agent = Agent(
-    model='gemini-2.0-flash-exp',
+    model='gemini-2.5-flash-lite',
     name='listin_agent',
     description='A helpful, uzbek speaking assistant for Listin online store.',
     tools=[],
@@ -88,7 +87,8 @@ AXLOQIY VA NOO‘RIN SAVOLLARNI BOSHQARISH:
 4. Har doim ijobiy, tinch va professional ohangda yozing.
 
 HAR BIR CHAT BOSHLANISHIDAN OLDIN QISQACHA KIRISH QISMINI TUZ UNDA DOKON VA MAHSULOTLAR HAQIDA QISQA VA UMUMIY MA'LUMOT BERING.
-"""
+KO'P SOZLARNI ISHLATMANG VA FAQAT ASOSIY MA'LUMOTLARGA E'TIBOR QILING.
+MULOYIM VA DO'STONA OHANGDA ODAMSIMON BO'LING, STICKERLAR ISHLATING VA CHATNI QIZIQARLI QILING."""
 )
 
 root_agent = listin_agent
